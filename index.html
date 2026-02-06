@@ -3,44 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cofounder — Building Autonomous Companies</title>
+    <title>Tastefully — Shaping Tech Narratives</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #FFFFFF;
-            color: #000000;
+            background-color: #FAFAFA;
+            color: #0A0A0A;
             font-weight: 400;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
+            letter-spacing: -0.01em;
         }
         .section-spacing {
-            margin-bottom: 8rem;
+            margin-bottom: 10rem;
         }
         @media (max-width: 768px) {
             .section-spacing {
-                margin-bottom: 5rem;
+                margin-bottom: 6rem;
             }
+        }
+        .accent-red {
+            color: #DC2626;
+        }
+        .bg-accent-red {
+            background-color: #DC2626;
+        }
+        .border-accent-red {
+            border-color: #DC2626;
+        }
+        .hover-red:hover {
+            color: #DC2626;
+        }
+        .glassy {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .editorial-line {
+            position: relative;
+            padding-left: 2rem;
+        }
+        .editorial-line::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: #DC2626;
         }
     </style>
 </head>
 <body class="min-h-screen flex flex-col antialiased selection:bg-black selection:text-white">
 
     <!-- Navigation -->
-    <header class="w-full px-6 py-8 md:px-12 flex justify-between items-center border-b border-gray-200">
+    <header class="w-full px-6 py-6 md:px-12 flex justify-between items-center border-b border-gray-100 glassy fixed top-0 z-50">
         <!-- Logo -->
         <div class="flex items-center gap-3 cursor-pointer">
-            <span class="font-semibold text-2xl tracking-tight text-black">Cofounder</span>
+            <span class="font-bold text-2xl tracking-tighter text-black">Tastefully</span>
         </div>
 
         <!-- Desktop Menu -->
-        <nav class="hidden md:flex items-center gap-8 text-[15px] font-normal text-gray-600">
-            <a href="#vision" class="hover:text-black transition-colors">Vision</a>
-            <a href="#writing" class="hover:text-black transition-colors">Writing</a>
-            <a href="#careers" class="hover:text-black transition-colors">Careers</a>
+        <nav class="hidden md:flex items-center gap-10 text-[14px] font-medium text-gray-500 tracking-tight">
+            <a href="#vision" class="hover-red transition-colors">Vision</a>
+            <a href="#writing" class="hover-red transition-colors">Editorial</a>
+            <a href="#careers" class="hover-red transition-colors">Careers</a>
         </nav>
 
         <!-- Mobile Menu Button (Hidden on Desktop) -->
@@ -52,53 +83,54 @@
     </header>
 
     <!-- Main Content -->
-    <main class="flex-grow flex flex-col px-6 md:px-12 py-20 md:py-32">
-        <div class="w-full max-w-[880px] mx-auto">
+    <main class="flex-grow flex flex-col px-6 md:px-12 py-32 md:py-40 mt-20">
+        <div class="w-full max-w-[960px] mx-auto">
             
             <!-- Hero Section -->
             <section class="section-spacing">
-                <h1 class="text-5xl md:text-7xl lg:text-[5.5rem] leading-[1.08] font-semibold tracking-tight text-black max-w-5xl mb-8">
-                    AI that runs businesses autonomously
+                <h1 class="text-6xl md:text-7xl lg:text-[6.5rem] leading-[0.95] font-bold tracking-tighter text-black max-w-5xl mb-12">
+                    <span class="block">Shaping tech</span>
+                    <span class="block accent-red">narratives.</span>
                 </h1>
-                <p class="text-xl md:text-2xl text-gray-600 leading-relaxed font-light max-w-[720px]">
-                    An applied AI lab building toward a future where companies can be created instantly.
+                <p class="text-xl md:text-2xl text-gray-600 leading-[1.5] font-normal max-w-[680px] editorial-line">
+                    Editorial intelligence meets cultural authority. We decode technology's trajectory with precision, speed, and conviction.
                 </p>
             </section>
 
             <!-- Vision Section -->
             <section id="vision" class="section-spacing">
-                <h2 class="text-gray-400 text-sm uppercase tracking-wider mb-8 font-medium">Vision</h2>
-                <div class="space-y-8 text-[1.125rem] leading-[1.75] text-gray-700 font-light">
+                <h2 class="text-gray-400 text-xs uppercase tracking-widest mb-10 font-semibold">Vision</h2>
+                <div class="space-y-8 text-[1.15rem] leading-[1.7] text-gray-800 font-normal">
                     <p>
-                        We envision a world where starting a company feels more like launching a game—instant, fluid, and accessible to anyone with an idea.
+                        Technology coverage has become reactive, breathless, and shallow. We're building something different: a design-forward editorial studio that shapes how culture understands tech.
                     </p>
                     <p>
-                        Today's AI agents operate in isolation. They write code, answer questions, analyze data—but they don't coordinate. They don't scale into organizations. They don't run businesses.
+                        Our work combines investigative rigor with visual storytelling. We don't just report on trends—we identify inflection points, decode power structures, and frame the narratives that matter.
                     </p>
                     <p>
-                        We're building the layer that changes that: intelligent systems that don't just assist, but execute—managing operations, making decisions, and evolving autonomously.
+                        <span class="accent-red font-semibold">Fast, authoritative, uncompromising.</span> This is journalism for the pace of technological change.
                     </p>
                 </div>
             </section>
 
             <!-- Problem / Thesis Section -->
             <section class="section-spacing">
-                <h2 class="text-gray-400 text-sm uppercase tracking-wider mb-8 font-medium">The Shift</h2>
-                <div class="space-y-12">
-                    <div>
-                        <h3 class="text-2xl md:text-3xl font-medium text-black mb-4 leading-snug">
-                            From tools to teammates
+                <h2 class="text-gray-400 text-xs uppercase tracking-widest mb-10 font-semibold">Our Approach</h2>
+                <div class="space-y-16">
+                    <div class="border-l-4 border-accent-red pl-8">
+                        <h3 class="text-3xl md:text-4xl font-bold text-black mb-5 leading-tight tracking-tight">
+                            Editorial velocity meets depth
                         </h3>
-                        <p class="text-[1.125rem] leading-[1.75] text-gray-700 font-light">
-                            AI is transitioning from productivity software to operational infrastructure. The question is no longer what AI can help you do—it's what AI can do without you.
+                        <p class="text-[1.15rem] leading-[1.7] text-gray-800 font-normal">
+                            We publish at the speed of tech culture—but with the rigor of investigative journalism. Every story is researched, contextualized, and designed for impact.
                         </p>
                     </div>
-                    <div>
-                        <h3 class="text-2xl md:text-3xl font-medium text-black mb-4 leading-snug">
-                            Coordination is the bottleneck
+                    <div class="border-l-4 border-accent-red pl-8">
+                        <h3 class="text-3xl md:text-4xl font-bold text-black mb-5 leading-tight tracking-tight">
+                            Visual storytelling as standard
                         </h3>
-                        <p class="text-[1.125rem] leading-[1.75] text-gray-700 font-light">
-                            Individual agents are powerful. But businesses require orchestration—workflows, memory, context, and decisioning across time. That's the infrastructure we're building.
+                        <p class="text-[1.15rem] leading-[1.7] text-gray-800 font-normal">
+                            Typography, composition, and cinematic layouts aren't decoration—they're how we communicate authority. Design is editorial strategy.
                         </p>
                     </div>
                 </div>
@@ -106,17 +138,17 @@
 
             <!-- Product Intro Section -->
             <section class="section-spacing">
-                <h2 class="text-gray-400 text-sm uppercase tracking-wider mb-8 font-medium">Introducing Cofounder</h2>
-                <div class="space-y-8">
-                    <p class="text-[1.125rem] leading-[1.75] text-gray-700 font-light">
-                        Cofounder is our first product: an AI system designed to operate as a founding team member—not just executing tasks, but managing entire business functions autonomously.
+                <h2 class="text-gray-400 text-xs uppercase tracking-widest mb-10 font-semibold">What We're Building</h2>
+                <div class="space-y-8 bg-white border border-gray-200 p-10 md:p-12">
+                    <p class="text-[1.15rem] leading-[1.7] text-gray-800 font-normal">
+                        A subscription platform for readers who demand more than headlines. Deep analysis, original reporting, and visual essays on the forces reshaping technology and culture.
                     </p>
-                    <p class="text-[1.125rem] leading-[1.75] text-gray-700 font-light">
-                        It's early. We're working with a small group of builders testing what's possible when AI doesn't just help—but runs the company alongside you.
+                    <p class="text-[1.15rem] leading-[1.7] text-gray-800 font-normal">
+                        We're launching with a founding membership—early access to our editorial studio, exclusive briefings, and direct engagement with our team.
                     </p>
-                    <div class="pt-4">
-                        <a href="#" class="inline-block border-2 border-black text-black px-8 py-3 text-[15px] font-medium hover:bg-black hover:text-white transition-all">
-                            Request access
+                    <div class="pt-6">
+                        <a href="#" class="inline-block bg-accent-red text-white px-10 py-4 text-[15px] font-semibold hover:bg-black transition-all tracking-tight">
+                            Join the waitlist
                         </a>
                     </div>
                 </div>
@@ -124,39 +156,54 @@
 
             <!-- Writing / Thinking Section -->
             <section id="writing" class="section-spacing">
-                <h2 class="text-gray-400 text-sm uppercase tracking-wider mb-8 font-medium">Writing</h2>
-                <div class="space-y-6">
-                    <a href="#" class="block group">
-                        <h3 class="text-xl font-medium text-black group-hover:text-gray-600 transition-colors mb-2">
-                            The Case for Autonomous Organizations
-                        </h3>
-                        <p class="text-gray-500 text-[15px]">Why coordination, not intelligence, is the next frontier</p>
+                <h2 class="text-gray-400 text-xs uppercase tracking-widest mb-10 font-semibold">Recent Work</h2>
+                <div class="space-y-8">
+                    <a href="#" class="block group border-b border-gray-200 pb-8 hover:border-accent-red transition-all">
+                        <div class="flex items-start justify-between gap-6">
+                            <div>
+                                <h3 class="text-2xl md:text-3xl font-bold text-black group-hover:accent-red transition-colors mb-3 leading-tight tracking-tight">
+                                    The Architectural Turn in AI
+                                </h3>
+                                <p class="text-gray-600 text-[15px] font-normal leading-relaxed">Why the next phase isn't about bigger models—it's about compositional intelligence and system design</p>
+                            </div>
+                            <span class="text-accent-red font-semibold text-sm shrink-0 pt-1">→</span>
+                        </div>
                     </a>
-                    <a href="#" class="block group">
-                        <h3 class="text-xl font-medium text-black group-hover:text-gray-600 transition-colors mb-2">
-                            Against Agent Maximalism
-                        </h3>
-                        <p class="text-gray-500 text-[15px]">Agents alone won't create companies—systems will</p>
+                    <a href="#" class="block group border-b border-gray-200 pb-8 hover:border-accent-red transition-all">
+                        <div class="flex items-start justify-between gap-6">
+                            <div>
+                                <h3 class="text-2xl md:text-3xl font-bold text-black group-hover:accent-red transition-colors mb-3 leading-tight tracking-tight">
+                                    Platform Power in the LLM Era
+                                </h3>
+                                <p class="text-gray-600 text-[15px] font-normal leading-relaxed">Mapping the new infrastructure layer and who controls the narrative stack</p>
+                            </div>
+                            <span class="text-accent-red font-semibold text-sm shrink-0 pt-1">→</span>
+                        </div>
                     </a>
-                    <a href="#" class="block group">
-                        <h3 class="text-xl font-medium text-black group-hover:text-gray-600 transition-colors mb-2">
-                            Building in Public, Slowly
-                        </h3>
-                        <p class="text-gray-500 text-[15px]">Our approach to applied AI research</p>
+                    <a href="#" class="block group border-b border-gray-200 pb-8 hover:border-accent-red transition-all">
+                        <div class="flex items-start justify-between gap-6">
+                            <div>
+                                <h3 class="text-2xl md:text-3xl font-bold text-black group-hover:accent-red transition-colors mb-3 leading-tight tracking-tight">
+                                    Against Productivity Theater
+                                </h3>
+                                <p class="text-gray-600 text-[15px] font-normal leading-relaxed">Why the AI tooling boom is optimizing the wrong layer of work</p>
+                            </div>
+                            <span class="text-accent-red font-semibold text-sm shrink-0 pt-1">→</span>
+                        </div>
                     </a>
                 </div>
             </section>
 
             <!-- Careers CTA Section -->
             <section id="careers" class="section-spacing pb-20">
-                <div class="border-t border-gray-200 pt-16">
-                    <h2 class="text-3xl md:text-4xl font-medium text-black mb-6 leading-snug">
-                        If this resonates, come work with us
+                <div class="border-t-2 border-black pt-20">
+                    <h2 class="text-4xl md:text-5xl font-bold text-black mb-8 leading-tight tracking-tight">
+                        Join the editorial studio
                     </h2>
-                    <p class="text-[1.125rem] leading-[1.75] text-gray-700 font-light mb-8 max-w-[640px]">
-                        We're a small team of builders, researchers, and founders working on the applied science of autonomous business operations. We're hiring across engineering, research, and operations.
+                    <p class="text-[1.15rem] leading-[1.7] text-gray-800 font-normal mb-10 max-w-[680px]">
+                        We're a small team of editors, researchers, and designers building a new model for tech journalism. Currently hiring for editorial, visual, and strategic roles.
                     </p>
-                    <a href="#" class="inline-block bg-black text-white px-8 py-3.5 text-[15px] font-medium hover:bg-gray-800 transition-all">
+                    <a href="#" class="inline-block bg-black text-white px-10 py-4 text-[15px] font-semibold hover:bg-accent-red transition-all tracking-tight">
                         View open roles
                     </a>
                 </div>
@@ -166,13 +213,13 @@
     </main>
 
     <!-- Footer -->
-    <footer class="w-full px-6 md:px-12 py-8 border-t border-gray-200">
-        <div class="max-w-[880px] mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-            <p class="text-sm text-gray-500">© 2024 Cofounder. Building the future of autonomous work.</p>
-            <div class="flex gap-6 text-sm text-gray-500">
-                <a href="#" class="hover:text-black transition-colors">Twitter</a>
-                <a href="#" class="hover:text-black transition-colors">GitHub</a>
-                <a href="#" class="hover:text-black transition-colors">Email</a>
+    <footer class="w-full px-6 md:px-12 py-10 border-t border-gray-200 bg-white">
+        <div class="max-w-[960px] mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+            <p class="text-sm text-gray-600 font-medium">© 2024 Tastefully. Editorial intelligence for tech culture.</p>
+            <div class="flex gap-8 text-sm text-gray-600 font-medium">
+                <a href="#" class="hover-red transition-colors">Twitter</a>
+                <a href="#" class="hover-red transition-colors">LinkedIn</a>
+                <a href="#" class="hover-red transition-colors">Email</a>
             </div>
         </div>
     </footer>
